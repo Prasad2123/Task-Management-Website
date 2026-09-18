@@ -1,9 +1,9 @@
-import React from 'react';
+﻿import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useApprovalData } from '@/hooks/useApprovalData';
 import { AppHeader } from '@/components/common/AppHeader';
 import { formatToIndiaTime } from '@/lib/dateUtils';
-import { XCircle, AlertTriangle, Home, ArrowRight, Calendar } from 'lucide-react';
+import { XCircle, AlertTriangle, Home, Calendar } from 'lucide-react';
 
 export const RejectedPage: React.FC = () => {
   const { token } = useParams<{ token: string }>();
@@ -67,14 +67,6 @@ export const RejectedPage: React.FC = () => {
           </div>
 
           <div className="pt-2 space-y-2">
-            <Link
-              to={`/approve/${token}`}
-              className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-900 text-white text-xs font-bold hover:bg-slate-800 transition-colors shadow-sm"
-            >
-              <span>View Review Summary</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-
             <Link
               to="/"
               className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors"
