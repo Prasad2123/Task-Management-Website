@@ -48,7 +48,7 @@ export const AppHeader: React.FC<AppHeaderProps> = ({ workId, companyName, statu
                 </>
               )}
             </div>
-            <span className="text-[11px] text-slate-500 shrink-0 font-medium">Asia/Kolkata (IST)</span>
+            <span className="text-[11px] text-slate-500 shrink-0 font-medium">Asia/Kolkata</span>
           </div>
         </div>
       )}

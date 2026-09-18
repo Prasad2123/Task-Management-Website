@@ -58,7 +58,7 @@ export const RejectedPage: React.FC = () => {
             <div className="flex items-center justify-between">
               <span className="text-slate-500 flex items-center gap-1">
                 <Calendar className="w-3.5 h-3.5 text-slate-400" />
-                Rejected At (IST)
+                Rejected At
               </span>
               <span className="font-bold text-slate-900">
                 {formatToIndiaTime(decidedTime)}

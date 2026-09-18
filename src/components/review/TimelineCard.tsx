@@ -19,7 +19,7 @@ export const TimelineCard: React.FC<TimelineCardProps> = ({ events = [] }) => {
             Activity Timeline
           </h3>
         </div>
-        <span className="text-xs text-slate-500 font-medium">Asia/Kolkata (IST)</span>
+        <span className="text-xs text-slate-500 font-medium">Asia/Kolkata</span>
       </div>
 
       {events.length === 0 ? (

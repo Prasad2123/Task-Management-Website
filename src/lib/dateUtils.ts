@@ -1,5 +1,5 @@
 /**
- * Centralized Date & Time Utility for Asia/Kolkata (IST).
+ * Centralized Date & Time Utility for Asia/Kolkata.
  * Strictly formats all user-facing timestamps to: dd MMM yyyy, hh:mm a
  * Example: 18 Sep 2026, 03:25 PM
  * Rejects raw ISO strings, UTC offsets, and "+00:00". Never appends "IST".

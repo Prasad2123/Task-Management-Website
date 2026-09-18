@@ -46,7 +46,7 @@ export const PocApprovalCard: React.FC<PocApprovalCardProps> = ({ pocApproval, p
         <div className="bg-white/80 p-3 rounded-xl border border-emerald-100">
           <span className="text-[11px] font-medium text-slate-500 uppercase tracking-wider block mb-0.5 flex items-center gap-1">
             <Clock className="w-3.5 h-3.5 text-slate-400" />
-            <span>Decision Timestamp (IST)</span>
+            <span>Decision Timestamp</span>
           </span>
           <span className="font-bold text-slate-900 block text-sm">
             {formatToIndiaTime(pocApproval?.decided_at)}

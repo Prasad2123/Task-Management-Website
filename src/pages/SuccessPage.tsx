@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useApprovalData } from '@/hooks/useApprovalData';
 import { AppHeader } from '@/components/common/AppHeader';
 import { formatToIndiaTime } from '@/lib/dateUtils';
-import { CheckCircle2, ShieldCheck, Home, Calendar, Globe, ArrowRight } from 'lucide-react';
+import { CheckCircle2, ShieldCheck, Home, Calendar, Globe } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export const SuccessPage: React.FC = () => {
@@ -57,7 +57,7 @@ export const SuccessPage: React.FC = () => {
             <div className="flex items-center justify-between border-b border-slate-200/60 pb-2">
               <span className="text-slate-500 font-medium flex items-center gap-1">
                 <Calendar className="w-3.5 h-3.5 text-slate-400" />
-                Approved At (IST)
+                Approved At
               </span>
               <span className="font-bold text-slate-900">
                 {formatToIndiaTime(decidedTime)}
@@ -84,14 +84,6 @@ export const SuccessPage: React.FC = () => {
           </div>
 
           <div className="pt-2 space-y-2">
-            <Link
-              to={`/approve/${token}`}
-              className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-900 text-white text-xs font-bold hover:bg-slate-800 transition-colors shadow-sm"
-            >
-              <span>View Submitted Summary</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-
             <Link
               to="/"
               className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors"
